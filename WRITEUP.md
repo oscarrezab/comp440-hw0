@@ -136,54 +136,54 @@ XXXX
 
 **Claude's rule:**
 
-XXXX
+Filter out movies with less than 20 ratings, and then select those with the highest mean rating.
 
 **Read what Claude wrote about its rule. Does it anywhere admit the rule was a choice, and that a different rule was possible? Or does it give its answer as simply the answer? Quote the sentence that decides it:**
 
-XXXX
+There's nothing that seems to acknowledge other possible more/less correct solutions. It attempts to justify filtering out movies with less than 20 ratings by stating it removes the likelihood of one being highly rated due to having fewer high votes. It seems like the chosen threshold was just taken from the previous questions.
 
 **Your Part 2 top 10 and Claude's Part 2 top 10 — not the Part 1(d) lists. Where do they differ, and why?**
 
-XXXX
+Claude did not provide a top 10 for Part 2. That must be because the only instruction for Part 2 in `questions.md` is to answer the question "What is the best movie in this dataset?"
 
 **Better for what purpose? Name a situation where your rule is the right one and a situation where Claude's is. At most 150 words. You may conclude yours, its, or neither:**
 
-XXXX
+I choose my rule because there is an explanation given to the choice of 65 movie ratings. Still, I understand one situation where Claude's rule might be preferred is one where we'd like to consider a larger portion of the total movies available.
 
 ## Part 6. Comparing the most ___ movie
 
 **Claude's definition:**
 
-XXXX
+The most romantic movie must be one with its listed genre is Romance and none other, it must be the highest rated and it must have at least 20 ratings.
 
 **Is Claude's film in your top 5?**
 
-XXXX
+It is not.
 
 **What Claude's definition sees that yours does not, and the reverse. At most 150 words:**
 
-XXXX
+It recognizes that movies can be labeled as being of more than one genre, which is a fair observation.
 
 ## Working with Claude
 
 **What you asked Claude for during Parts 1–3** (debugging and installing only — say what you
 got stuck on)**:**
 
-XXXX
+It was generally about setting up the development environment. Every time I got stuck on bugs I just referenced the `pandas` documentation directly; it was sufficient to read the output and test potential solutions.
 
 **Something Claude said that you could not verify, and why. Or "none," and how you checked:**
 
-XXXX
+I think I was able to verify everything by comparing my code to Claude's and noticing the similarities and differences in approach.
 
 **What you would do differently next time, in 3–5 sentences:**
 
-XXXX
+I spent a good bit setting up my environment because I am just starting to test Neovim as an IDE replacement. I spent multiple hours trying to fix things in my setup, until I began asking Claude for help with that. I'd like to consider seeking LLM help for setups earlier on next time.
 
 **Where did this assignment slow you down for a reason that was its fault, not yours? Point at
 the step. Or "nowhere." One or two sentences:**
 
-XXXX
+Nowhere.
 
-**Hours spent:** XXXX
+**Hours spent:** About 2h30m.
 
-**Anyone who helped you, or "no one":** XXXX
+**Anyone who helped you, or "no one":** No one.
