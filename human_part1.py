@@ -7,8 +7,6 @@ Answer the four questions below with your own code, print each answer under its 
 explain each in one sentence in WRITEUP.md.
 """
 
-import pandas as pd
-
 from load_data import load_all
 
 
