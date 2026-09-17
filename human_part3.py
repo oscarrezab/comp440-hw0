@@ -14,9 +14,24 @@ from load_data import load_all
 def top5_my_definition(ratings, ratings_df, movies, movies_df):
     print("== My definition ==")
 
+    joined = ratings_df.join(movies_df, on="movie_id", rsuffix="_movies")
+    grouped = (
+        joined.groupby(["movie_id", "title", "Romance"])
+        .agg(ratings_count=("rating", "size"), mean_rating=("rating", "mean"))
+        .reset_index()
+    )
+
+    filtered = grouped.query(
+        "ratings_count >= 65 and ratings_count <= 148 and Romance == True"
+    )
+    print(
+        filtered.sort_values(by="mean_rating", ascending=False)
+        .head()[["title", "mean_rating"]]
+        .to_string(index=False)
+    )
+
 
 def human_part3(ratings, ratings_df, movies, movies_df):
-    print("part 3 unimplemented")  # delete this line when you start
     top5_my_definition(ratings, ratings_df, movies, movies_df)
 
 
